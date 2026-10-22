@@ -1,0 +1,32 @@
+NINJA DA FOLHA — projeto PSP com compilação automática
+=======================================================
+
+ESTE PACOTE AINDA NÃO É UM JOGO EXECUTÁVEL.
+Ele inclui o código-fonte e uma rotina para tentar compilar o EBOOT.PBP
+automaticamente usando GitHub Actions e a imagem PSPSDK pspdev/pspdev.
+
+COMO GERAR O EBOOT.PBP SEM INSTALAR O PSPSDK NO CELULAR
+1. Baixe e extraia este ZIP.
+2. Entre em github.com e crie um repositório novo (pode ser privado).
+3. Envie TODOS os arquivos e pastas extraídos para esse repositório.
+   Importante: inclua a pasta oculta .github/workflows/build.yml.
+4. Abra a aba Actions do repositório.
+5. Se o workflow não iniciar automaticamente, escolha "Build Ninja da Folha PSP"
+   e toque em "Run workflow".
+6. Abra a execução mais recente. Se ficar verde, abra Artifacts e baixe
+   "NinjaDaFolha-EBOOT-PBP.zip".
+7. Extraia esse ZIP. Ele deve conter EBOOT.PBP.
+8. No Android, copie EBOOT.PBP para uma pasta do aparelho.
+9. Abra o PPSSPP, navegue até a pasta e tente iniciar o EBOOT.PBP.
+
+CONTROLES
+- Direcional esquerdo/direito: mover
+- X: pular
+- Quadrado: atacar
+- START: reiniciar
+
+IMPORTANTE
+- A compilação automática ainda precisa ser executada; não posso afirmar que gerou
+  um EBOOT funcional antes de o workflow concluir com sucesso.
+- Se falhar, abra o log do GitHub Actions e compartilhe o erro para corrigirmos.
+- Este projeto é um homebrew PSP em formato EBOOT.PBP, não uma ISO de disco.
